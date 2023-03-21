@@ -96,7 +96,7 @@ export function DataRequest() {
   const client = new GraphQLClient(endpoint, {
     headers: {
       'content-type': 'application/json',
-      authorization: 'Barear ' + process.env.NEXT_DATOCMS_API_TOKEN,
+      authorization: 'Barear ' + process.env.NEXT_PUBLIC_DATOCMS_API_TOKEN,
     },
   });
   return client.request(query);
